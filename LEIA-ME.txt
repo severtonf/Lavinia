@@ -1,1 +1,0 @@
-Coloque a foto da Lavínia com o nome foto.jpg na mesma pasta do index.html para aparecer automaticamente.

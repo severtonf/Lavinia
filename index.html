@@ -3,54 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lavínia - 15 Anos</title>
+<title>Lavínia | 15 Anos</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="cover">
-  <div class="card">
+
+<div class="snow"></div>
+
+<section id="cover">
+  <div class="gate gate-left"></div>
+  <div class="gate gate-right"></div>
+
+  <div class="center">
     <h1>Lavínia</h1>
     <h2>15 Anos</h2>
     <p>Venha fazer parte do meu Sonho</p>
-    <button onclick="abrirConvite()">Abrir Convite</button>
+    <button onclick="openInvite()">✨ Abrir Convite ✨</button>
   </div>
-</div>
+</section>
 
-<div id="invite" class="hidden">
+<section id="invite" class="hidden">
   <div class="card">
     <h1>Lavínia Lopes Fernandes</h1>
-    <p>25/07/2026 • 21h</p>
-    <p>Espaço Glee<br>Av. Lino Jardim, 575 - Santo André/SP</p>
+    <p class="subtitle">Baile de Inverno</p>
+
+    <img src="foto.jpg" class="photo">
+
+    <p>📅 25 de Julho de 2026</p>
+    <p>🕘 21h</p>
+    <p>📍 Espaço Glee</p>
 
     <div class="buttons">
-      <a target="_blank" href="https://www.google.com/maps/dir//Espa%C3%A7o+Glee,+Av.+Lino+Jardim,+575+-+Jardim+Bela+Vista,+Santo+Andr%C3%A9+-+SP,+09041-030/">📍 Endereço</a>
-      <a target="_blank" href="https://osmoment.com.br/convidado/54865634938b4cb480a9043c30f66ad6">✅ Confirmar Presença</a>
-      <a href="#" onclick="abrirPresentes()">🎁 Lista de Presentes</a>
-      <a href="#" onclick="abrirDress()">👗 Dress Code</a>
+      <a target="_blank" href="https://www.google.com/maps/dir//Espa%C3%A7o+Glee,+Av.+Lino+Jardim,+575+-+Jardim+Bela+Vista,+Santo+Andr%C3%A9+-+SP,+09041-030/">Endereço</a>
+      <a target="_blank" href="https://osmoment.com.br/convidado/54865634938b4cb480a9043c30f66ad6">Confirmar Presença</a>
+      <a href="#" onclick="show('presentes')">Lista de Presentes</a>
+      <a href="#" onclick="show('dress')">Dress Code</a>
     </div>
   </div>
-</div>
+</section>
 
 <div id="presentes" class="modal hidden">
-<div class="modal-content">
-<h2>Sugestões de Presentes</h2>
-<p>💄 Maquiagem: Nina Secrets, Bruna Tavares e Océane</p>
-<p>📚 Livros: fantasia, romance, suspense, terror e mistério</p>
-<p>🌸 Perfumes e Body Splashes florais e adocicados</p>
-<p>✨ Acessórios dourados</p>
+<div class="modal-box">
+<h2>✨ Sugestões de Presentes ✨</h2>
+<p>Sua presença já é um presente muito especial para mim! 💖</p>
+<p>💄 Nina Secrets, Bruna Tavares e Océane</p>
+<p>📚 Fantasia, Romance, Suspense, Terror e Mistério</p>
+<p>🌸 Perfumes florais e doces</p>
+<p>✨ Colares e brincos dourados</p>
 <p>👜 Bolsas e Necessaires</p>
-<p><b>PIX:</b> 456.713.048-06</p>
-<button onclick="copiarPix()">Copiar Pix</button>
-<button onclick="fechar()">Fechar</button>
+<p><strong>PIX:</strong> 456.713.048-06</p>
+<button onclick="copyPix()">Copiar Pix</button>
+<button onclick="hideAll()">Fechar</button>
 </div>
 </div>
 
 <div id="dress" class="modal hidden">
-<div class="modal-content">
+<div class="modal-box">
 <h2>Dress Code</h2>
 <p>Traje Social</p>
-<p>Não utilizar vestido azul</p>
-<button onclick="fechar()">Fechar</button>
+<p>🚫 Não utilizar vestido azul</p>
+<button onclick="hideAll()">Fechar</button>
 </div>
 </div>
 

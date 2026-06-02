@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lavínia - 15 Anos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="cover">
+  <div class="card">
+    <h1>Lavínia</h1>
+    <h2>15 Anos</h2>
+    <p>Venha fazer parte do meu Sonho</p>
+    <button onclick="abrirConvite()">Abrir Convite</button>
+  </div>
+</div>
+
+<div id="invite" class="hidden">
+  <div class="card">
+    <h1>Lavínia Lopes Fernandes</h1>
+    <p>25/07/2026 • 21h</p>
+    <p>Espaço Glee<br>Av. Lino Jardim, 575 - Santo André/SP</p>
+
+    <div class="buttons">
+      <a target="_blank" href="https://www.google.com/maps/dir//Espa%C3%A7o+Glee,+Av.+Lino+Jardim,+575+-+Jardim+Bela+Vista,+Santo+Andr%C3%A9+-+SP,+09041-030/">📍 Endereço</a>
+      <a target="_blank" href="https://osmoment.com.br/convidado/54865634938b4cb480a9043c30f66ad6">✅ Confirmar Presença</a>
+      <a href="#" onclick="abrirPresentes()">🎁 Lista de Presentes</a>
+      <a href="#" onclick="abrirDress()">👗 Dress Code</a>
+    </div>
+  </div>
+</div>
+
+<div id="presentes" class="modal hidden">
+<div class="modal-content">
+<h2>Sugestões de Presentes</h2>
+<p>💄 Maquiagem: Nina Secrets, Bruna Tavares e Océane</p>
+<p>📚 Livros: fantasia, romance, suspense, terror e mistério</p>
+<p>🌸 Perfumes e Body Splashes florais e adocicados</p>
+<p>✨ Acessórios dourados</p>
+<p>👜 Bolsas e Necessaires</p>
+<p><b>PIX:</b> 456.713.048-06</p>
+<button onclick="copiarPix()">Copiar Pix</button>
+<button onclick="fechar()">Fechar</button>
+</div>
+</div>
+
+<div id="dress" class="modal hidden">
+<div class="modal-content">
+<h2>Dress Code</h2>
+<p>Traje Social</p>
+<p>Não utilizar vestido azul</p>
+<button onclick="fechar()">Fechar</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Lavínia 15 Anos</title>
+<style>
+body{margin:0;background:#000;display:flex;justify-content:center}
+.container{position:relative;max-width:900px;width:100%}
+img{width:100%;display:block}
+.btn{position:absolute;display:block}
+#mapa{left:8%;top:72%;width:24%;height:13%}
+#rsvp{left:38%;top:72%;width:24%;height:13%}
+#presentes{left:67%;top:72%;width:24%;height:13%}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);align-items:center;justify-content:center;padding:20px}
+.box{background:#fff;padding:25px;border-radius:16px;max-width:700px;max-height:80vh;overflow:auto}
+</style></head><body>
+<div class='container'>
+<img src='convite.png'>
+<a id='mapa' class='btn' target='_blank' href='https://www.google.com/maps/dir//Espa%C3%A7o+Glee,+Av.+Lino+Jardim,+575+-+Jardim+Bela+Vista,+Santo+Andr%C3%A9+-+SP,+09041-030/@-23.6858385,-46.5644216,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce435c1deedad1:0x63479719e7c39020!2m2!1d-46.5377207!2d-23.6611564?entry=ttu'></a>
+<a id='rsvp' class='btn' target='_blank' href='https://osmoment.com.br/convidado/54865634938b4cb480a9043c30f66ad6'></a>
+<a id='presentes' class='btn' href='#' onclick='abrir();return false;'></a>
+</div>
+<div id='m' class='modal'><div class='box'>
+<h2>✨ Sugestões de Presentes ✨</h2>
+<p>Sua presença já é um presente muito especial para mim! 💖</p>
+<p>💄 Nina Secrets, Bruna Tavares e Océane</p>
+<p>📚 Fantasia, Romance, Suspense, Terror e Mistério</p>
+<p>🌸 Perfumes e Body Splashes florais e doces</p>
+<p>✨ Colares e brincos dourados</p>
+<p>👜 Bolsas e Necessaires</p>
+<p><b>PIX:</b> 456.713.048-06</p>
+<button onclick="navigator.clipboard.writeText('456.713.048-06')">Copiar Pix</button>
+<button onclick='fechar()'>Fechar</button>
+</div></div>
+<script>
+function abrir(){document.getElementById('m').style.display='flex'}
+function fechar(){document.getElementById('m').style.display='none'}
+</script></body></html>
